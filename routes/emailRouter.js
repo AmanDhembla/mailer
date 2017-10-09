@@ -4,7 +4,7 @@ var router = express.Router();
 
 router.route("/confirmation")
 .post(function(req,res,next){
-	sendEmail(req.body.to,req.body.subject,"<h1>do as fast as possible</h1>");
+	sendEmail(req.body.to,req.body.subject,"do as fast as possible");
 	res.json({success:true});
 });
 
